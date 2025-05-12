@@ -5,7 +5,7 @@ export default class Server
 		this.others = new Set();
 
 		this.socket = new WebSocket(
-			"wss://" + window.location.hostname + ":54321"
+			"wss://" + window.location.hostname + ":80"
 		);
 
 		this.socket.onopen = e => {
